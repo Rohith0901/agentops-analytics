@@ -1,4 +1,4 @@
-# Pinned for reproducibility; audited with `make security` (pip-audit).
+# Runtime dependencies (pinned). Dev tools: requirements-dev.txt
 pandas==3.0.6
 numpy==2.5.3
 scipy==1.18.1
@@ -9,6 +9,3 @@ seaborn==0.13.2
 plotly==7.1.0
 streamlit==1.64.0
 openpyxl==3.1.5
-pytest==9.1.1
-bandit==1.9.4
-pip-audit==2.10.1

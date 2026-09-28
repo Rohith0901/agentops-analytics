@@ -9,6 +9,9 @@ uploads, no unsafe_allow_html with data, no eval/exec/pickle.
 
 from __future__ import annotations
 
+import subprocess  # nosec B404 - runs only our own data generator, fixed argv
+import sys
+
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -33,10 +36,31 @@ st.caption(
 # --------------------------------------------------------------------------
 # Guard: missing database
 # --------------------------------------------------------------------------
+@st.cache_resource(show_spinner="First start: generating the synthetic dataset (about 10 seconds)...")
+def _bootstrap_database() -> bool:
+    """Build the database once if it is missing.
+
+    The SQLite file is gitignored (it's ~70 MB and fully reproducible), so a
+    fresh hosted deployment such as Streamlit Community Cloud starts without
+    it. The generator is deterministic (seed 42), so the result is identical
+    to a local `make data`. Fixed argv, no shell, no user input involved.
+    """
+    subprocess.run(  # nosec B603 - fixed command: our own script and seed
+        [sys.executable, str(d.ROOT / "src" / "generate_data.py"), "--seed", "42"],
+        check=True, capture_output=True, timeout=600,
+    )
+    return d.db_exists()
+
+
+if not d.db_exists():
+    try:
+        _bootstrap_database()
+    except (subprocess.SubprocessError, OSError):
+        pass
 if not d.db_exists():
     st.error(
-        "The database `data/agentops.db` was not found. Run `make data` "
-        "(or `.venv/bin/python src/generate_data.py`) to generate it, then reload."
+        "The database `data/agentops.db` was not found and could not be generated. "
+        "Run `make data` (or `python src/generate_data.py`) and reload."
     )
     st.stop()
 

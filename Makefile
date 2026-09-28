@@ -3,7 +3,7 @@ PY := .venv/bin/python
 .PHONY: setup data analysis excel dashboard benchmark-mock test security all
 
 setup:            ## create venv and install pinned dependencies
-	python3 -m venv .venv && $(PY) -m pip install -r requirements.txt
+	python3 -m venv .venv && $(PY) -m pip install -r requirements-dev.txt
 
 data:             ## generate the synthetic dataset (CSV + SQLite)
 	$(PY) src/generate_data.py --seed 42
@@ -26,6 +26,6 @@ test:             ## full test suite
 
 security:         ## static analysis + dependency vulnerability audit
 	$(PY) -m bandit -r src dashboard llm_benchmark -q -ll   # fail on medium+ severity; low findings reviewed
-	$(PY) -m pip_audit -r requirements.txt
+	$(PY) -m pip_audit -r requirements-dev.txt
 
 all: data analysis excel test

@@ -1,0 +1,7 @@
+task_type,n_runs,success_pct,credits_per_task,total_llm_cost_usd,llm_cost_per_credit_usd,blended_revenue_per_credit_usd,margin_per_credit_usd,margin_per_credit_rank_worst_first
+code_migration,102153,62.14,6.0,273992.19,0.447,0.9748,0.5278,1
+feature_build,28308,63.38,5.0,37797.38,0.267,0.9748,0.7078,2
+refactor,37826,73.34,4.0,32568.02,0.2152,0.9748,0.7596,3
+bug_fix,57097,83.08,3.0,36402.02,0.2125,0.9748,0.7623,4
+test_generation,38000,90.54,2.0,15718.44,0.2068,0.9748,0.768,5
+dependency_upgrade,28324,81.25,3.0,12129.53,0.1427,0.9748,0.8321,6

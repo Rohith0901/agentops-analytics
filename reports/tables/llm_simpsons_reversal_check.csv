@@ -1,0 +1,7 @@
+model_a,model_b,pooled_winner,pct_task_strata_agreeing_with_pooled_winner,reversal_flag
+frontier-large,balanced-medium,frontier-large,1.0,False
+frontier-large,fast-small,frontier-large,1.0,False
+frontier-large,open-weights-hosted,frontier-large,1.0,False
+balanced-medium,fast-small,balanced-medium,1.0,False
+balanced-medium,open-weights-hosted,balanced-medium,1.0,False
+fast-small,open-weights-hosted,fast-small,1.0,False

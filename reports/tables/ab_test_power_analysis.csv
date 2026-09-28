@@ -1,0 +1,2 @@
+n_control,n_treatment,conversion_control,conversion_treatment,observed_effect_size_h,achieved_power,mde_at_80pct_power_pp,required_n_per_arm_for_observed_effect_at_80pct_power
+196,182,0.2602040816326531,0.1978021978021978,0.14881750466339105,0.30385639274451165,13.468766068994265,708.8079341736942

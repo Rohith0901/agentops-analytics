@@ -1,0 +1,6 @@
+acquisition_channel,signups,self_serve_signups,self_serve_conversions,self_serve_conversion_pct,paid_logos,paid_logos_churned,paid_logo_churn_pct,avg_lifetime_revenue_per_signup_usd,total_lifetime_revenue_usd,conversion_rank,retention_rank
+Referral,429,429,174,40.56,174,41,23.56,71.7,30759.79,1,2
+Community,383,383,137,35.77,137,38,27.74,87.11,33363.7,2,3
+Organic,683,683,198,28.99,198,60,30.3,69.07,47174.57,3,4
+Paid Search,495,495,82,16.57,82,32,39.02,29.4,14553.11,4,5
+Outbound Sales,217,0,0,,217,36,16.59,4415.69,958205.68,5,1

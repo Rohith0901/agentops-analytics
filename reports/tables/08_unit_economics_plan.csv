@@ -1,0 +1,4 @@
+plan,paying_customers,customer_months,total_revenue_usd,total_llm_cost_usd,gross_profit_usd,gross_margin_pct,llm_cost_per_credit_usd,revenue_per_credit_usd,margin_rank_worst_first
+Team,160,1116,168927.3,97386.91,71540.39,42.35,0.3157,0.5476,1
+Pro,531,3204,98832.25,48018.44,50813.81,51.41,0.1798,0.3701,2
+Enterprise,83,669,816297.3,252487.86,563809.44,69.07,0.4706,1.5215,3

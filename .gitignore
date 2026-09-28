@@ -1,0 +1,18 @@
+# Environments & caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Secrets (none are used, but never commit them)
+.env
+.env.*
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Generated data — rebuild with `make data`
+data/raw/
+data/*.db
+data/powerbi/*.csv

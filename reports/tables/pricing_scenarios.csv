@@ -1,0 +1,5 @@
+scenario,assumption,total_revenue_usd,total_llm_cost_usd,gross_profit_usd,gross_margin_pct
+status_quo,"Actual observed billing and LLM cost, no changes.",1084056.85,408607.5837,675449.2663,62.30755022672473
+complexity_weighted_migration_credits,code_migration credits raised 6->10/task; incremental revenue priced at the current blended $/credit rate; LLM cost unchanged.,1482386.2619481208,408607.5837,1073778.6782481207,72.43582228271485
+route_simple_tasks_to_balanced_medium,test_generation/bug_fix/dependency_upgrade fully routed to balanced-medium at its observed avg cost-per-run for each task; revenue (credits) unchanged.,1084056.85,387259.13281123055,696797.7171887695,64.27686123553109
+pro_39,Pro monthly_fee_usd raised $29->$39 for all historical Pro customer-months; assumes no incremental churn beyond what the A/B test measured (upper-bound estimate).,1116096.85,408607.5837,707489.2663,63.38959439765465

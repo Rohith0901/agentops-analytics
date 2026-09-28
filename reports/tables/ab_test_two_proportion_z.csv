@@ -1,0 +1,2 @@
+n_control,n_treatment,conversion_control,conversion_treatment,diff_control_minus_treatment,diff_ci_low,diff_ci_high,z_statistic,p_value
+196,182,0.2602040816326531,0.1978021978021978,0.06240188383045528,-0.021991561863883027,0.14679532952479357,1.4401283817091093,0.14983108068172912

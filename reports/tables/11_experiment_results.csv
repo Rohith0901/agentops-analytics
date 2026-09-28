@@ -1,0 +1,3 @@
+variant,pro_price_shown,n_assigned,n_converted_30d,conversion_pct,avg_revenue_per_assigned_first_3mo_usd,total_revenue_first_3mo_usd,pct_of_all_converters
+control,29,196,51,26.02,23.56,4618.0,58.62
+treatment,39,182,36,19.78,27.15,4941.25,41.38

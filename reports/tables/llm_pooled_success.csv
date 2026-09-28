@@ -1,0 +1,5 @@
+model,pooled_success_rate
+frontier-large,0.825559927642989
+balanced-medium,0.7545776886848373
+fast-small,0.6322282721069681
+open-weights-hosted,0.5578941110021106

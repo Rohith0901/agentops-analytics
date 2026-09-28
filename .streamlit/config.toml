@@ -1,0 +1,12 @@
+[server]
+enableXsrfProtection = true
+enableCORS = false
+headless = true
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+showErrorDetails = false

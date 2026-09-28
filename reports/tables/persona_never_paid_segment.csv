@@ -1,0 +1,2 @@
+persona_name,n_customers,share_of_all_customers,avg_monthly_runs,failure_rate,migration_share,activation_score,avg_llm_cost,lifetime_revenue_usd
+Never converted (Free only),1399,0.6338921613049389,17.97855611150822,0.1849035214415311,0.3669805952969241,0.5639742673338098,0.3728058023781676,0.0

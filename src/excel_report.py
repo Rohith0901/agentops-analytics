@@ -1,6 +1,6 @@
 """excel_report.py — builds reports/AgentOps_Report.xlsx.
 
-A recruiter-facing Excel workbook for the (synthetic) CodeShift dataset:
+An Excel workbook for the (synthetic) CodeShift dataset:
 KPI dashboard with native charts, monthly/plan/model-task breakdowns, a
 customer-level summary table, a live-formula pricing simulator, and a
 pivot-ready flat fact table. See ARCHITECTURE.md for the shared metric
@@ -535,9 +535,9 @@ def build_readme_sheet(wb: Workbook) -> None:
     ws.merge_cells("A1:B1")
 
     ws["A3"] = (
-        "Purpose: a recruiter-facing summary of CodeShift's (fictional AI coding-agent SaaS) "
+        "Purpose: a summary of CodeShift's (fictional AI coding-agent SaaS) "
         "customer, LLM-usage, and pricing data — built to demonstrate SQL/Python analysis, "
-        "Excel modelling, and Power BI / Tableau readiness for an Analytics Intern role."
+        "Excel modelling, and Power BI / Tableau readiness."
     )
     ws["A3"].alignment = Alignment(wrap_text=True, vertical="top")
     ws.row_dimensions[3].height = 45

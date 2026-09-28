@@ -348,8 +348,8 @@ def build_report() -> str:
       "so no same-month outcome information leaks into the prediction. The holdout AUC is evaluated with "
       "a **customer-grouped** split (`GroupShuffleSplit`), not a row-level random split, since randomly "
       "splitting person-period rows would let a customer's other months leak correlated outcome "
-      "information into the test set. This lifted holdout AUC from ~0.53 to a more honest ~0.6, and is "
-      "the interview-relevant point: getting the unit of analysis and the censoring right materially "
+      "information into the test set. This lifted holdout AUC from ~0.53 to a more honest ~0.6 — "
+      "getting the unit of analysis and the censoring right materially "
       "changes both the model's apparent skill and which features come out significant. A manual "
       "Kaplan-Meier curve (no external survival-analysis library) provides a non-parametric cross-check "
       "of the same conclusion.")

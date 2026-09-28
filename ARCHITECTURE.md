@@ -1,7 +1,7 @@
 # AgentOps Analytics — Architecture & Build Spec
 
-Portfolio project targeting an **Analytics Intern** role at an AI coding-agent company
-(autonomous agents for software migration/modernization). JD pillars:
+Portfolio project analyzing a simulated AI coding-agent SaaS company
+(autonomous agents for software migration/modernization). Core topics covered:
 customer data · LLM output data · pricing data · reports/visualizations · Excel · SQL ·
 Tableau/Power BI · statistics · Python.
 
@@ -14,7 +14,7 @@ AI agents run coding tasks (legacy migrations, bug fixes, test generation...) fo
 - All paths via `pathlib`, relative to project root (`ROOT = Path(__file__).resolve().parents[1]`).
 - Deterministic: `np.random.default_rng(42)`.
 - No hard-coded "findings" — every number in reports is computed from data.
-- Clean, commented, readable code (a hiring manager will read it). Type hints, docstrings, small functions.
+- Clean, commented, readable code, meant to be read by other developers. Type hints, docstrings, small functions.
 - Money in USD. Dates ISO `YYYY-MM-DD`.
 
 ## Directory layout
@@ -116,7 +116,7 @@ Window: 2025-01-01 → 2026-08-31 (20 months). Signups grow ~6%/month from ~60/m
 the weakest paid plan; overall run success ~70–78%; free→paid conversion ~25–35%; paid monthly
 logo churn ~3–6%; total runs 250k–400k; generator runs in < 60s.
 
-## Analysis questions (Builder B) — each must map to a JD bullet
+## Analysis questions (Builder B) — each covers a core analytics topic
 - Customer: MRR/ARR trend, NRR & GRR, cohort logo retention triangle, activation threshold vs
   conversion & 6-month retention, churn drivers (logistic regression w/ odds ratios + AUC),
   KMeans personas on usage features.
